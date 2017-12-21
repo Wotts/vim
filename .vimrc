@@ -30,3 +30,4 @@ match ExtraWhitespace /\s\s\+$/
 
 "Remove all trailing whitespace by pressing F6
 nnoremap <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+set pastetoggle=<F11>
