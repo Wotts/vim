@@ -1,7 +1,6 @@
 KeyStrPress Control_L
 KeyStrPress Shift_L
-KeyStrPress t
-KeyStrRelease t
+KeyStr t
 KeyStrRelease Shift_L
 KeyStrRelease Control_L
 
@@ -15,8 +14,7 @@ KeyStr Return
 
 KeyStrPress Control_L
 KeyStrPress Shift_L
-KeyStrPress t
-KeyStrRelease t
+KeyStr t
 KeyStrRelease Shift_L
 KeyStrRelease Control_L
 
@@ -30,8 +28,7 @@ KeyStr Return
 
 KeyStrPress Control_L
 KeyStrPress Shift_L
-KeyStrPress t
-KeyStrRelease t
+KeyStr t
 KeyStrRelease Shift_L
 KeyStrRelease Control_L
 
@@ -45,8 +42,7 @@ KeyStr Return
 
 KeyStrPress Control_L
 KeyStrPress Shift_L
-KeyStrPress t
-KeyStrRelease t
+KeyStr t
 KeyStrRelease Shift_L
 KeyStrRelease Control_L
 
@@ -60,8 +56,7 @@ KeyStr Return
 
 KeyStrPress Control_L
 KeyStrPress Shift_L
-KeyStrPress t
-KeyStrRelease t
+KeyStr t
 KeyStrRelease Shift_L
 KeyStrRelease Control_L
 
@@ -75,8 +70,7 @@ KeyStr Return
 
 KeyStrPress Control_L
 KeyStrPress Shift_L
-KeyStrPress t
-KeyStrRelease t
+KeyStr t
 KeyStrRelease Shift_L
 KeyStrRelease Control_L
 
