@@ -107,11 +107,11 @@ function! s:HL(group, fg, ...)
   let fg = a:fg
 
   " background
-  if a:0 >= 1
-    let bg = a:1
-  else
+"  if a:0 >= 1
+"    let bg = a:1
+"  else
     let bg = s:none
-  endif
+"  endif
 
   " emphasis
   if a:0 >= 2 && strlen(a:2)
