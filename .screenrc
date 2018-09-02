@@ -1,0 +1,8 @@
+# Screenrc Twan Driessen - Systeemprogrammeur XS4ALL Internet
+#
+# Enable mouse scrolling and scroll bar history scrolling
+termcapinfo xterm* ti@:te@
+term xterm-256color
+utf8 on
+defutf8 on
+

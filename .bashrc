@@ -10,6 +10,7 @@ export LANG=en_GB.UTF-8
 export LANGUAGE=en_GB.UTF-8
 
 export VISUAL=vim
+export RANGER_LOAD_DEFAULT_RC=false
 export EDITOR="$VISUAL"
 
 export LESS="-SR"
