@@ -178,7 +178,7 @@ for_window [class="Spotify"] move to workspace $workspace10
 bindsym $mod+Return workspace $workspace1 exec --no-startup-id i3-sensible-terminal
 bindsym $mod+i workspace $workspace8 exec --no-startup-id gnome-terminal -e ranger
 bindsym $mod+f exec --no-startup-id firefox
-bindsym $mod+c exec --no-startup-id google-chrome
+bindsym $mod+c exec --no-startup-id google-chrome --password-store=gnome
 
 
 
