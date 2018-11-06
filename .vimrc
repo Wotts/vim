@@ -29,6 +29,9 @@ set scroll=20
 set cursorline
 set splitright
 set showcmd
+set wildmenu
+set wildmode=list:full
+set noshowmode "Airline does this for us
 
 
 "Hide POD
@@ -57,3 +60,4 @@ inoremap <C-L> <C-X><C-L>
 
 "Pathogen for vim-airline and vim-gitgutter
 execute pathogen#infect()
+execute pathogen#helptags()
