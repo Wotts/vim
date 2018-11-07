@@ -61,3 +61,12 @@ inoremap <C-L> <C-X><C-L>
 "Pathogen for vim-airline and vim-gitgutter
 execute pathogen#infect()
 execute pathogen#helptags()
+
+" Airline customizations
+let g:airline#extensions#branch#format = 2
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+let g:airline_symbols.branch = '⎇ '
+:let g:airline_theme='airlinewotts'
