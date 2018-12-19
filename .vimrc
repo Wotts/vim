@@ -31,7 +31,7 @@ set cursorline
 set splitright
 set showcmd
 set wildmenu
-set wildmode=full
+set wildmode=longest:full
 set noshowmode "Airline does this for us
 
 
