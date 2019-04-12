@@ -4,6 +4,8 @@ shopt -s cdspell
 shopt -s histappend
 shopt -s checkwinsize
 HISTCONTROL=ignoredups:erasedups
+HISTSIZE=10000
+HISTFILESIZE=1000
 
 export LC_ALL=nl_NL.UTF-8
 export LANG=en_GB.UTF-8
@@ -21,20 +23,33 @@ fi
 
 
 
-# Prompt
+# Colors and prompt
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+LS_COLORS=$LS_COLORS:'di=0;34:fi=0;0:ln=0;94:ex=0;32' ; export LS_COLORS
+
 parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (  \1)/'
 }
 
 green="\[\e[32m\]"
 red="\[\e[31m\]"
 yellow="\[\e[33m\]"
+cyan="\[\e[36m\]"
 reset="\[\e[m\]"
-export PS1="${green}\u@${reset}\h ${red}[$STY]${reset}${yellow}\$(parse_git_branch)${reset} \w\n${red}~<$>${reset} "
+if [ $STY ]; then
+    screen="{$STY}"
+else
+    screen=""
+fi
+
+export PS1="${debian_chroot:+($debian_chroot)}${green}\u${reset}@${cyan}\h ${red}${screen}${yellow}\$(parse_git_branch)${reset} \w\n${red}</>${reset} "
 
 
 
-# Colors
+# If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
     PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
@@ -42,8 +57,6 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
-LS_COLORS=$LS_COLORS:'di=0;34:fi=0;0:ln=0;94:ex=0;32' ; export LS_COLORS
 
 
 

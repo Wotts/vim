@@ -5,4 +5,3 @@ termcapinfo xterm* ti@:te@
 term xterm-256color
 utf8 on
 defutf8 on
-
