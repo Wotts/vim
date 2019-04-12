@@ -71,6 +71,7 @@ if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
+" Requires vim-fugitive
 let g:airline_symbols.branch = '⎇ '
 :let g:airline_theme='airlinewotts'
 
