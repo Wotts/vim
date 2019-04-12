@@ -37,7 +37,7 @@ parse_git_branch() {
 green="\[\e[32m\]"
 red="\[\e[31m\]"
 yellow="\[\e[33m\]"
-cyan="\[\e[36m\]"
+blue="\[\e[34m\]"
 reset="\[\e[m\]"
 if [ $STY ]; then
     screen="{$STY}"
@@ -45,7 +45,7 @@ else
     screen=""
 fi
 
-export PS1="${debian_chroot:+($debian_chroot)}${green}\u${reset}@${cyan}\h ${red}${screen}${yellow}\$(parse_git_branch)${reset} \w\n${red}</>${reset} "
+export PS1="${debian_chroot:+($debian_chroot)}${green}\u${reset}@${blue}\h ${red}${screen}${yellow}\$(parse_git_branch)${reset} \w\n${red}</>${reset} "
 
 
 
