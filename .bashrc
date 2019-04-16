@@ -68,3 +68,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+# exa aliases
+alias exals='exa --long --all --all --header --modified --git --classify --sort=name'
+alias exatree='exa --long --all --header --modified --git --classify --tree --sort=name'
