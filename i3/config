@@ -172,6 +172,7 @@ assign [class="Steam"] $workspace7
 assign [class="libreoffice"] $workspace8
 #assign [class=""] $workspace8
 assign [class="Google-chrome"] $workspace9
+assign [class="vlc"] $workspace10
 for_window [class="Spotify"] move to workspace $workspace10
 
 
