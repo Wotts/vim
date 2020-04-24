@@ -1,4 +1,5 @@
 # Bashrc Twan Driessen - Systeemprogrammeur XS4ALL Internet
+alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 
 shopt -s cdspell
 shopt -s histappend
@@ -76,6 +77,7 @@ esac
 alias ww="~/bin/screen-wotts"
 alias perldork='perldoc'
 alias please='sudo $(fc -ln -1)'
+alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
