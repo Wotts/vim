@@ -1,0 +1,4 @@
+#!/bin/bash
+screen -dmS "xs4all-vpn"
+screen -r "xs4all-vpn" -X stuff $'clear && start_vpn\n'
+screen -r "xs4all-vpn"
