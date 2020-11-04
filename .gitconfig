@@ -1,0 +1,6 @@
+[includeIf "gitdir:~/personal_code/"]
+  path = .gitconfig-personal
+[includeIf "gitdir:~/janus-gateway/"]
+  path = .gitconfig-professional-xs
+[includeIf "gitdir:~/yello/"]
+  path = .gitconfig-professional-xs
