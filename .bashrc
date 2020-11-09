@@ -79,6 +79,7 @@ alias maak='make'
 alias yeet='rm -rf'
 alias vimall='vim -p $(git status --porcelain | awk '\''{print $2}'\'')'
 alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
+alias pipes='pipes.sh -p 4 -r 10000 -c 1 -c 2 -c 3 -c 4 -c 5 -c 6 -c 7'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
