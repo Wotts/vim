@@ -44,10 +44,10 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
 "Hide POD
-:set foldmethod=syntax
-:let perl_fold=1
-:let perl_nofold_packages=1
-:let perl_nofold_subs=1
+":set foldmethod=syntax
+":let perl_fold=1
+":let perl_nofold_packages=1
+":let perl_nofold_subs=1
 
 
 "Filetypes
