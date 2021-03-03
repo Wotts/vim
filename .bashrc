@@ -33,6 +33,16 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/( ⎇  \1 )/'
 }
 
+virtualenv_info(){
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        venv="${VIRTUAL_ENV##*/}"
+    else
+        venv=''
+    fi
+    [[ -n "$venv" ]] && echo "(venv:$venv) "
+}
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 sep1="▓▒░ "
 sep2=" ░▒▓"
 green="\[\e[1;32m\]"
@@ -53,10 +63,11 @@ fi
 userpart="╭─${debian_chroot:+($debian_chroot)}${whiteback}${sep1} \u "
 hostpart="${whitetocyan}${sep1}${cyanback} \h ${sep2}${reset}"
 git="${yellow}\$(parse_git_branch)${reset}"
+venv="\$(virtualenv_info)";
 path="${green}\w${reset}"
 prompt="╰──╼ ${red}</>${reset} "
 
-export PS1="${userpart} ${hostpart} ${screen} ${git} ${path}\n${prompt}"
+export PS1="${userpart} ${hostpart} ${screen} ${git} ${venv} ${path}\n${prompt}"
 
 
 
