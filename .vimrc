@@ -22,7 +22,7 @@ set expandtab
 set incsearch
 set hlsearch
 set number
-set relativenumber
+"set relativenumber
 set ignorecase
 set smartcase
 noremap <C-d> 10<C-d>
