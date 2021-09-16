@@ -1,0 +1,39 @@
+Dependencies:
+- i3-gaps
+- i3blocks
+- compton
+- dunst
+- rofi
+- Consolas font
+- fontawesome
+- betterlockscreen
+- imagemagick
+- i3lock-color
+- feh
+- exa
+- tree
+- playerctl
+- xprop
+- xrandr
+- scrot
+- homebrew
+
+Optional
+- gnome-tweak-tool
+- lxappearance
+- change-gdm-background
+- papirus icon pack
+- neofetch
+- htop
+- gotop
+- bashtop
+- cmatrix
+- spicetify
+- pipes.sh
+
+Notes:
+- remap Caps_Lock to Escape:
+    sudo vim /usr/share/X11/xkb/symbols/pc
+
+- reload terminal configuration:
+    dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
