@@ -1,32 +1,5 @@
 # i3 config Twan Driessen - Systeemprogrammeur XS4ALL Internet
 
-# Dependencies
-# - i3-gaps
-# - i3blocks
-# - compton
-# - dunst
-# - lxappearance
-# - Consolas font
-# - fontawesome
-# - betterlockscreen.sh
-# - spicetify
-# - feh
-#
-# - homebrew
-# - rofi
-# - playerctl
-# - xprop
-# - xrandr
-# - scrot
-# - ranger
-#
-# - neofetch
-# - htop
-# - gotop
-# - bashtop
-# - cmatrix
-
-
 set $mod Mod4
 workspace_layout tabbed
 hide_edge_borders both
@@ -193,7 +166,6 @@ for_window [class="Spotify"] move to workspace $workspace10
 
 # staring applications
 bindsym $mod+Return workspace $workspace1 exec --no-startup-id i3-sensible-terminal --password-store=gnome
-bindsym $mod+i workspace $workspace5 exec --no-startup-id gnome-terminal --profile=Wotts-srcery-transparent -e ranger
 bindsym $mod+f exec --no-startup-id firefox
 bindsym $mod+c exec --no-startup-id google-chrome --password-store=gnome
 
@@ -211,7 +183,7 @@ bindsym $mod+Shift+m exec --no-startup-id shutdown -h now
 
 
 # Lock i3
-bindsym $mod+Shift+x exec --no-startup-id ~/bin/betterlockscreen.sh --lock
+bindsym $mod+Shift+x exec --no-startup-id betterlockscreen --lock
 
 
 # resize window (you can also use the mouse for that)
@@ -239,10 +211,9 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113
 
 # Switch monitors
-exec --no-startup-id "xrandr --output eDP-1 --off; xrandr --output DP-1 --auto; restart"
-bindsym $mod+g exec --no-startup-id "xrandr --output eDP-1 --off; xrandr --output DP-1 --auto; restart"
-bindsym $mod+k exec --no-startup-id "xrandr --output eDP-1 --off; xrandr --output HDMI-1 --auto; restart"
-bindsym $mod+Shift+g exec --no-startup-id "xrandr --output eDP-1 --auto; xrandr --output DP-1 --off; xrandr --output HDMI-1 --off; restart"
+exec --no-startup-id "xrandr --output eDP-1 --off; xrandr --output DP-1-1 --auto; restart"
+bindsym $mod+g exec --no-startup-id "xrandr --output eDP-1 --off; xrandr --output DP-1-1 --auto; restart"
+bindsym $mod+Shift+g exec --no-startup-id "xrandr --output eDP-1 --auto; xrandr --output DP-1-1 --off; xrandr -s 1920x1080"
 bindsym $mod+Shift+h exec --no-startup-id "xrandr -s 1920x1080"
 
 # Media volume controls
@@ -279,5 +250,6 @@ gaps outer 5
 for_window [class="^.*"] border pixel 5
 
 # Wallpapers
+bindsym $mod+b exec --no-startup-id feh --bg-fill ~/Pictures/fVNa6RR.jpg
 exec_always --no-startup-id feh --bg-fill ~/Pictures/fVNa6RR.jpg
 #exec ~/bin/betterlockscreen.sh -u ~/Pictures/fVNa6RR.jpg
