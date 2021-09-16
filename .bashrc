@@ -16,6 +16,8 @@ export EDITOR="$VISUAL"
 
 export LESS="-SR -# 10"
 
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -94,6 +96,7 @@ alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
 alias pipes='pipes.sh -p 4 -r 10000 -c 1 -c 2 -c 3 -c 4 -c 5 -c 6 -c 7'
 
 alias ls='ls --color=auto'
+alias ll='ls -alF --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
