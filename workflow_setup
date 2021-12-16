@@ -31,6 +31,11 @@ Optional
 - spicetify
 - pipes.sh
 
+For Mac:
+ - iTerm2
+ - OhMyZsh
+ - Powerlevel10K
+
 Notes:
 - remap Caps_Lock to Escape:
     sudo vim /usr/share/X11/xkb/symbols/pc
