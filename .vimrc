@@ -94,6 +94,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
+Plug 'https://github.com/ap/vim-css-color'
 
 "File search and navigation
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -133,8 +134,12 @@ let g:minimap_auto_start = 1
 let g:minimap_auto_start_win_enter = 1
 let g:minimap_auto_start_win_enter = 0
 
+let NERDTreeWinSize=36
+let NERDTreeShowHidden=1
+let NERDTreeMapOpenInTab='<ENTER>'
+let NERDTreeNodeDelimiter = "\t"
+
 autocmd VimEnter * NERDTree | wincmd p
-autocmd BufWinEnter * NERDTreeMirror
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
@@ -185,12 +190,6 @@ inoremap <C-L> <C-X><C-L>
 
 " Open and close NERDTree
 map <C-x> :NERDTreeToggle<CR>
-
-" NERDTree customizations
-let NERDTreeWinSize=36
-let NERDTreeShowHidden=1
-let NERDTreeMapOpenInTab='<ENTER>'
-let NERDTreeNodeDelimiter = "\t"
 
 " fzf and ripgrep searching
 let mapleader = ","
