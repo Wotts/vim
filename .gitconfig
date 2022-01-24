@@ -1,5 +1,9 @@
 [core]
   excludesfile = ~/.gitignore
+	autocrlf = true
+	whitespace = cr-at-eol
+[pull]
+	rebase = true
 
 [includeIf "gitdir:~/personal_code/"]
   path = .gitconfig-personal
