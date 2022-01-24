@@ -18,6 +18,7 @@
 - [`htop`](https://htop.dev/) - a cool resource monitor
 - [`gotop`](https://github.com/cjbassi/gotop) - a cooler resource monitor
 - [`bashtop`](https://github.com/aristocratos/bashtop) - the coolest recource monitor
+- [`bottom`](https://github.com/ClementTsang/bottom) - also a pretty cool resource monitor
 
 ### Style
 - [`betterlockscreen`](https://github.com/betterlockscreen/betterlockscreen) - a pretty lockscreen
@@ -49,6 +50,7 @@
 
 ### Repositories for reference:
 - [`srcery-vim`](https://github.com/srcery-colors/srcery-vim)
+- [`srcery-vscode`](https://github.com/srcery-colors/srcery-vscode)
 - [`srdz-af/vimrc`](https://github.com/srdz-af/vimrc)
 
 ### Notes:
