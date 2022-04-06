@@ -106,7 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias achilles="cd ~/Documents/www/achilles && vagrant up"
 alias yeet="rm -rf"
 alias please='sudo $(fc -ln -1)'
 alias exals='exa --long --all --all --header --modified --git --classify --sort=name'
