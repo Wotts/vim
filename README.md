@@ -48,6 +48,15 @@
  - [`OhMyZsh`](https://ohmyz.sh/) - Zshell manager
  - [`Powerlevel10K`](https://github.com/romkatv/powerlevel10k) - Theme for Zshell
 
+## VsCode extensions:
+- [`Vue Language Features (Volar)`]('https://github.com/johnsoncodehk/volar')
+- [`Tailwind CSS IntelliSense`]('https://github.com/tailwindlabs/tailwindcss-intellisense')
+- [`Srcery`]('ihttps://github.com/srcery-colors/srcery-vscode')
+- [`Prettier`]('https://github.com/prettier/prettier-vscode')
+- [`ESLint`]('https://github.com/Microsoft/vscode-eslint')
+- [`GitLens`]('https://github.com/gitkraken/vscode-gitlens')
+- [`PHP Intelephense`]('https://github.com/bmewburn/vscode-intelephense')
+
 ### Repositories for reference:
 - [`srcery-vim`](https://github.com/srcery-colors/srcery-vim)
 - [`srcery-vscode`](https://github.com/srcery-colors/srcery-vscode)
