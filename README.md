@@ -61,6 +61,7 @@
 - [`srcery-vim`](https://github.com/srcery-colors/srcery-vim)
 - [`srcery-vscode`](https://github.com/srcery-colors/srcery-vscode)
 - [`srdz-af/vimrc`](https://github.com/srdz-af/vimrc)
+- [`guns/xterm-color-table`](https://github.com/guns/xterm-color-table.vim)
 
 ### Notes:
 - remap Caps_Lock to Escape on Ubuntu:
