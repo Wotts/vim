@@ -1,4 +1,4 @@
-" Vimrc Twan Driessen - Systeemprogrammeur XS4ALL Internet
+" VIMrc Wotts
 
 "Colour
 syntax on
@@ -16,6 +16,7 @@ filetype plugin indent on
 set ls=2
 set title
 set mouse=i
+set scrolloff=5
 set softtabstop=4
 set shiftwidth=4
 set expandtab
@@ -28,6 +29,7 @@ set smartcase
 noremap <C-d> 10<C-d>
 noremap <C-u> 10<C-u>
 set cursorline
+:hi CursorLine ctermbg=236
 set splitright
 set showcmd
 set wildmenu
@@ -55,12 +57,13 @@ autocmd BufNewFile,BufRead *.tt2 set filetype=html
 autocmd BufNewFile,BufRead *.t set filetype=perl
 autocmd BufNewFile,BufRead *.ns set filetype=perl
 
-
 "Keybindings
 "Remove all trailing whitespace by pressing F6
 nnoremap <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 nnoremap <F7> :%!python3 -m json.tool<CR>
 nnoremap <silent> <BS> :nohlsearch<CR>
+nnoremap H gT
+nnoremap L gt
 vmap J !jq<CR>
 vmap S !sort<CR>
 vmap T !perltidy<CR>
@@ -76,14 +79,18 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 " Airline customizations
-let g:airline#extensions#branch#format = 2
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#tabs_label = 'tabs'
+let g:airline#extensions#tabline#formatter = 'default'
+let g:airline#extensions#branch#format = 0
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
 " Requires vim-fugitive
 let g:airline_symbols.branch = '⎇ '
-:let g:airline_theme='airlinewotts'
+:let g:airline_theme='base16color'
 
 "NERDTree customizations
 let NERDTreeWinSize=36

@@ -30,6 +30,10 @@
 - [`spicetify`](https://github.com/khanhas/spicetify-cli) - change Spotify looks
 
 ### VIM
+- [`vim-pathogen`](https://github.com/tpope/vim-pathogen) - Vim package autoloader
+- [`vim-airline`](https://github.com/vim-airline) - Statusbar and themes
+- [`powerline-fonts`](https://github.com/powerline/fonts.git) - Font for Airline
+- [`vim-fugitive`](https://github.com/tpope/vim-fugitive) - Git plugin
 - [`nodejs`](nodejs.org), required by [`junegunn/vim-plug`](https://github.com/junegunn/vim-plug)
 - [`code-minimap`](https://github.com/wfxr/code-minimap), required by [`wfxr/minimap.vim`](https://github.com/wfxr/minimap.vim)
 
