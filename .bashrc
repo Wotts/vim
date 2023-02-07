@@ -1,4 +1,4 @@
-# Bashrc Twan Driessen - Systeemprogrammeur XS4ALL Internet
+# BASHrc
 shopt -s cdspell
 shopt -s histappend
 shopt -s checkwinsize
