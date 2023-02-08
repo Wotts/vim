@@ -89,11 +89,11 @@
   "Mouse Reporting" : true,
   "Screen" : -1,
   "Selection Color" : {
-    "Red Component" : 0.14901960784313725,
+    "Red Component" : 0.9882352941176471,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.14901960784313725,
+    "Blue Component" : 0.76470588235294112,
     "Alpha Component" : 1,
-    "Green Component" : 0.14901960784313725
+    "Green Component" : 0.90980392156862744
   },
   "Only The Default BG Color Uses Transparency" : true,
   "Columns" : 80,
@@ -317,6 +317,7 @@
   "Visual Bell" : true,
   "Flashing Bell" : false,
   "Silence Bell" : false,
+  "Use Underline Color" : false,
   "Ansi 14 Color" : {
     "Red Component" : 0.16862745098039217,
     "Color Space" : "sRGB",
@@ -335,11 +336,11 @@
   "Minimum Contrast" : 0,
   "Shortcut" : "",
   "Cursor Color" : {
-    "Red Component" : 0.30588235294117649,
+    "Red Component" : 0.72941176470588232,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.30588235294117649,
+    "Blue Component" : 0.49803921568627452,
     "Alpha Component" : 1,
-    "Green Component" : 0.30588235294117649
+    "Green Component" : 0.65098039215686276
   },
   "Transparency" : 0,
   "Ansi 1 Color" : {
