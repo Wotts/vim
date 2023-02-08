@@ -34,6 +34,7 @@
 - [`vim-airline`](https://github.com/vim-airline) - Statusbar and themes
 - [`powerline-fonts`](https://github.com/powerline/fonts.git) - Font for Airline
 - [`vim-fugitive`](https://github.com/tpope/vim-fugitive) - Git plugin
+- [`auto-pairs`](https://github.com/jiangmiao/auto-pairs) - Insert or delete brackets, parens, quotes in pair
 - [`nodejs`](nodejs.org), required by [`junegunn/vim-plug`](https://github.com/junegunn/vim-plug)
 - [`code-minimap`](https://github.com/wfxr/code-minimap), required by [`wfxr/minimap.vim`](https://github.com/wfxr/minimap.vim)
 

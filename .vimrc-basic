@@ -4,8 +4,6 @@
 syntax on
 colorscheme srcery
 hi MatchParen cterm=bold ctermfg=black ctermbg=white
-
-
 "Whitespace
 highlight ExtraWhitespace ctermbg=darkgrey
 match ExtraWhitespace /\s\s\+$/
@@ -36,26 +34,6 @@ set wildmenu
 set wildmode=longest:full
 set noshowmode "Airline does this for us
 
-"Auto-closing
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
-
-"Hide POD
-":set foldmethod=syntax
-":let perl_fold=1
-":let perl_nofold_packages=1
-":let perl_nofold_subs=1
-
-
-"Filetypes
-autocmd BufNewFile,BufRead *.tt2 set filetype=html
-autocmd BufNewFile,BufRead *.t set filetype=perl
-autocmd BufNewFile,BufRead *.ns set filetype=perl
 
 "Keybindings
 "Remove all trailing whitespace by pressing F6
@@ -66,7 +44,6 @@ nnoremap H gT
 nnoremap L gt
 vmap J !jq<CR>
 vmap S !sort<CR>
-vmap T !perltidy<CR>
 set pastetoggle=<F8>
 "Open and close NERDTree
 map <C-x> :NERDTreeToggle<CR>
@@ -74,6 +51,8 @@ map <C-x> :NERDTreeToggle<CR>
 inoremap <C-N> <C-X><C-N>
 inoremap <C-L> <C-X><C-L>
 
+
+"Plugins
 "Pathogen for vim-airline and vim-gitgutter
 execute pathogen#infect()
 execute pathogen#helptags()
