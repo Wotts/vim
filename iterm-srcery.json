@@ -158,6 +158,12 @@
       "Action" : 10,
       "Text" : "[21;2~"
     },
+    "0xf702-0x280000-0x7b" : {
+      "Version" : 1,
+      "Action" : 10,
+      "Text" : "b",
+      "Label" : ""
+    },
     "0xf702-0x260000" : {
       "Action" : 10,
       "Text" : "[1;6D"
@@ -190,9 +196,11 @@
       "Action" : 10,
       "Text" : "[1;2D"
     },
-    "0xf703-0x280000" : {
-      "Action" : 11,
-      "Text" : "0x1b 0x1b 0x5b 0x43"
+    "0xf703-0x280000-0x7c" : {
+      "Version" : 1,
+      "Action" : 10,
+      "Text" : "f",
+      "Label" : ""
     },
     "0xf700-0x240000" : {
       "Action" : 10,
@@ -221,10 +229,6 @@
     "0xf701-0x260000" : {
       "Action" : 10,
       "Text" : "[1;6B"
-    },
-    "0xf702-0x280000" : {
-      "Action" : 11,
-      "Text" : "0x1b 0x1b 0x5b 0x44"
     },
     "0xf72b-0x20000" : {
       "Action" : 10,
@@ -365,7 +369,7 @@
   "Command" : "",
   "Terminal Type" : "xterm-256color",
   "Horizontal Spacing" : 1,
-  "Option Key Sends" : 0,
+  "Option Key Sends" : 2,
   "Only The Default BG Color Uses Transparency" : true,
   "Minimum Contrast" : 0,
   "Ansi 15 Color" : {
