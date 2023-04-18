@@ -6,12 +6,18 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # ZSH
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export LS_COLORS="di=36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=37;41:sg=30;43:tw=30;42:ow=34;42:"
+
 export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+
+# yes, we do this again for a reason
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export LS_COLORS="di=36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=37;41:sg=30;43:tw=30;42:ow=34;42:"
 
 # Plugins
 plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
 
 
 # User configuration
@@ -30,8 +36,8 @@ export NVM_DIR="$HOME/.nvm"
 
 alias yeet="rm -rf"
 alias please='sudo $(fc -ln -1)'
-alias exals='exa --long --all --all --header --modified --git --classify --sort=name'
-alias exatree='exa --long --all --header --modified --git --classify --tree --sort=name'
+alias els='exa --long --all --all --header --modified --git --classify --sort=name'
+alias etree='exa --long --all --header --modified --git --classify --tree --sort=name'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
