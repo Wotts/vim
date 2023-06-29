@@ -39,6 +39,10 @@ alias please='sudo $(fc -ln -1)'
 alias els='exa --long --all --all --header --modified --git --classify --sort=name'
 alias etree='exa --long --all --header --modified --git --classify --tree --sort=name'
 
+function gb () {
+  git grep -n $1 | perl -F':' -anpe '$_=`git blame -fL$F[1],+1 $F[0]`'
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
