@@ -12,6 +12,7 @@
 
 ### Functional
 - [`exa`](https://the.exa.website/) - replacement for `ls`
+- [`bat`](https://github.com/sharkdp/bat) - better `cat`
 - [`homebrew`](https://brew.sh/) - package manager
 - [`playerctl`](https://github.com/altdesktop/playerctl) - mediaplayer control
 - [`scrot`](https://github.com/dreamer/scrot) - screenshot tool
